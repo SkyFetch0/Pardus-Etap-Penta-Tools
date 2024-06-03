@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Pardus Penta Tools
+Exec=gnome-terminal -- bash -c "echo '1' | sudo -S /home/etap/Belgeler/pentastart.sh; exec bash"
+Terminal=true
+Type=Application
+Icon=/home/etap/Belgeler/parduspenta/test_images/pardus.ico
+Categories=Tools
