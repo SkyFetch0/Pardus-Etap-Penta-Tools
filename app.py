@@ -60,7 +60,7 @@ def check_ver(ver,school,schoolclass):
     mac_address = ':'.join(['{:02x}'.format((uuid.getnode() >> elements) & 0xff) for elements in range(5, -1, -1)])
 
 
-    api_url = "https://pentascans.com.tr/api/ver.php?data=pardusexe&ver="+str(ver)+"&okul="+str(school)+"&sinif="+str(schoolclass)+"&machine="+str(mac_address)
+    api_url = "https://penta.skyfetch.dev/api/ver.php?data=pardusexe&ver="+str(ver)+"&okul="+str(school)+"&sinif="+str(schoolclass)+"&machine="+str(mac_address)
     
     try:
         # API'ye GET isteği yap

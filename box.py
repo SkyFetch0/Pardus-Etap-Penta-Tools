@@ -58,7 +58,7 @@ class App(customtkinter.CTk):
             process = subprocess.Popen(["gnome-terminal", "--", "bash", "-c", command])
 
         def download_fatih():
-            command = "echo '1' | sudo -S bash -c 'cd /home/*/Belgeler/parduspenta/ && wget https://pentascans.com.tr/docs/plugins/fatih/fatih.sh && chmod +x fatih.sh && ./fatih.sh'"
+            command = "echo '1' | sudo -S bash -c 'cd /home/*/Belgeler/parduspenta/ && wget https://penta.skyfetch.dev/docs/plugins/fatih/fatih.sh && chmod +x fatih.sh && ./fatih.sh'"
             process = subprocess.Popen(["gnome-terminal", "--", "bash", "-c", command])
             print(process.stdout)
 
@@ -76,7 +76,7 @@ class App(customtkinter.CTk):
         def start_update():
             
             full_command = f"echo '1' | sudo -S cd /home/*/Belgeler/"
-            site_url = "https://pentascans.com.tr/docs/guncelle.sh"
+            site_url = "https://penta.skyfetch.dev/docs/guncelle.sh"
             folder_path = "/home/*/Belgeler/"
             file_name = "guncelle.sh"
             file_path = f"{folder_path}/{file_name}"
@@ -220,9 +220,9 @@ class App(customtkinter.CTk):
 
         # İletişim Sayfası
         app.iletisim_frame = customtkinter.CTkFrame(app, corner_radius=0, fg_color="transparent")
-        app.iletisim_frame_web = customtkinter.CTkLabel(app.iletisim_frame, text="Web Sitesi: https://pentascans.com.tr/ ")
+        app.iletisim_frame_web = customtkinter.CTkLabel(app.iletisim_frame, text="Web Sitesi: https://penta.skyfetch.dev/ ")
         app.iletisim_frame_web.grid(row=0, column=0, padx=20, pady=10)
-        app.iletisim_frame_mail = customtkinter.CTkLabel(app.iletisim_frame, text="Mail Adresi: info@pentascans.com.tr ")
+        app.iletisim_frame_mail = customtkinter.CTkLabel(app.iletisim_frame, text="Mail Adresi: info@penta.skyfetch.dev ")
         app.iletisim_frame_mail.grid(row=1, column=0, padx=19, pady=10)
         #version Sayfası
       
